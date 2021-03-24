@@ -90,16 +90,6 @@
   position: relative;
   overflow: hidden;
 
-  // @media screen and (max-width: 767px) {
-  //   width: 450px;
-  //   height: 294px;
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   width: 354px;
-  //   height: 294px;
-  // }
-
   @media screen and (min-width: 1200px) {
     width: 370px;
   }
@@ -158,6 +148,10 @@
   border-right: 1px solid rgba(238, 238, 238, 1);
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-bottom: 1px solid rgba(238, 238, 238, 1);
+
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+  }
 }
 
 .portfolio__title {
