@@ -8,14 +8,13 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-    
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.7);
 }
@@ -25,7 +24,7 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
+  width: 450px;
   padding: 40px;
 
   background-color: var(--primary-back);
@@ -34,6 +33,10 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .modal__close {
@@ -76,7 +79,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  
+
   color: var(--title-text);
 }
 
@@ -129,7 +132,6 @@
   transform: translateY(-50%);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .form__input:focus + .form__icon {
@@ -169,18 +171,28 @@
 }
 
 .check__label {
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
 
   color: var(--grey-text);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .check__link {
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   text-decoration: underline;
 
   color: var(--accent);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .check__input {
