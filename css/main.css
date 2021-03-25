@@ -975,6 +975,12 @@ section {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .clients__item + .clients__item {
+    margin-left: 30px;
+  }
+}
+
 .clients__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
